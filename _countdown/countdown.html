@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Countdown</title>
+    <!------------------------ JQUERY-------------------------------- -->
+    <script
+		  src="https://code.jquery.com/jquery-3.3.1.js"
+		  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		  crossorigin="anonymous">
+	</script>
+			  <!------------------JQUERY--------------------------- -->
+    <link rel="stylesheet" type="text/css" href="countdown.css">
+    <script type="text/javascript" src="countdown.js"></script>
+    <link rel="icon" type="image/png" href="boule.png" sizes="16x16">
+</head>
+<body>
+	<img id="nuage" src="nuage_magique.gif" alt="nuage_magique">
+	<div>
+    <p id="title">Final<img id="boule" src="boule.png" alt="boule">COuntdOwn</p>
+    </div>
+    <div id="compteur">
+    	 <img id="goku_petit" src="goku_petit.gif" alt="goku_petit"> 
+        <p id="affichage">00:00</p>
+    </div>
+    <div id="commande">
+	<form name="form">
+		<input type="number" size="3" id="minutes" value=""> minute(s)
+		<input type="number" size="3" id="secondes" value=""> secondes
+		<input id="depart" type="button" value="Départ" onclick="launch(),bip()">
+		<input type="button" value="Reset" onclick="remiseAZ()">
+		<input id="popose" type="button" value="Pause" onclick="pause(),affGoku()">
+	</form>
+	<footer id="images_bas">
+		<img id="vegeta" src="vegeta.png" alt="vegeta">
+		<img id="baston" src="dragonball_baston.gif" alt="baston" >
+		<img id="goku_attend" src="goku_attend.gif" alt="goku_attend" >
+	</footer>
+	<audio  id="beep" src="ping.mp3">
+</audio>
+    </div>
+</body>
+</html>
