@@ -49,6 +49,13 @@ function time (){
 }
 
 function affiche(){
+
+	if(minutes == 0 && secondes == 0)
+	{
+		var sound2 = document.getElementById("sonnerie");
+            sound2.play();
+	}
+
 	if (minutes < 10)	//gestion d'affichage du temps avec la contrainte du 00:00//
 	{
 		document.getElementById('affichage').innerHTML = '0' + minutes; 
